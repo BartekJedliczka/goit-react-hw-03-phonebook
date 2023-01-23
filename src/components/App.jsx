@@ -9,14 +9,12 @@ import Filter from './Filter/Filter';
 class App extends Component {
   state = {
     contacts: [
-      { id: 'id-1', name: 'Rosie Simpson', number: '459-132-563' },
-      { id: 'id-2', name: 'Hermione Kline', number: '443-892-122' },
-      { id: 'id-3', name: 'Eden Clements', number: '645-127-729' },
-      { id: 'id-4', name: 'Annie Copeland', number: '227-921-262' },
+      // { id: 'id-1', name: 'Rosie Simpson', number: '459-132-563' },
+      // { id: 'id-2', name: 'Hermione Kline', number: '443-892-122' },
+      // { id: 'id-3', name: 'Eden Clements', number: '645-127-729' },
+      // { id: 'id-4', name: 'Annie Copeland', number: '227-921-262' },
     ],
     filter: '',
-    name: '',
-    number: '',
   };
 
   addContact = ({ name, number }) => {
