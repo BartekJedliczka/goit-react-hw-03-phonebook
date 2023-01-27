@@ -19,18 +19,19 @@ class App extends Component {
 
   addContact = ({ name, number }) => {
     const normalizedCase = name.toLowerCase();
-    let isAdded = false;
 
-    this.state.contacts.forEach(el => {
+    const contactAdded = this.state.contacts.find(el => {
       if (el.name.toLowerCase() === normalizedCase) {
         alert(`${name} is already in contacts`);
-        isAdded = true;
+        return true;
       }
+      return false;
     });
 
-    if (isAdded) {
+    if (contactAdded) {
       return;
     }
+
     const contact = {
       id: nanoid(),
       name: name,
