@@ -74,7 +74,7 @@ class App extends Component {
   render() {
     const { filter } = this.state;
     const filtered = this.filteredContacts();
-    let numberOfSearch = filtered.length;
+    const numberOfSearch = filtered.length;
     return (
       <div className={css.app}>
         <h1>Phonebook</h1>
